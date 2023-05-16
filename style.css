@@ -1,0 +1,13 @@
+.header{
+    text-align: center;
+    font-size:40px;
+    margin-top:25px;
+}
+
+.container{
+    width:500px;
+    height:500px;
+    display: grid;
+    
+}
+
