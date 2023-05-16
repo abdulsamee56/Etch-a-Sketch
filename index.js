@@ -1,7 +1,12 @@
+let color = 'black';
+
 function PopulateBoard(size){
     let container = document.querySelector('.container');
     let squares = container.querySelectorAll('div');
     squares.forEach((div)=>div.remove());
+
+  
+
     container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
     container.style.gridTemplateRows = `repeat(${size}, 1fr)`;
 
@@ -9,6 +14,7 @@ function PopulateBoard(size){
     let amount = size*size;
     for (i =0; i < amount;i++){
         let square = document.createElement('div');
+        square.addEventListener('mouseover',colorBoard);
         square.style.backgroundColor = 'blue';
         container.insertAdjacentElement('beforeend',square);
     
@@ -24,4 +30,13 @@ function changeSize(input){
     else{
         alert("Squares must be between 2-100");
     }
+}
+
+function colorBoard(){
+        this.style.backgroundColor=color;
+}
+
+function resetBoard(){
+    PopulateBoard(16);
+
 }
