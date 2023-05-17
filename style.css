@@ -3,14 +3,23 @@
     font-size:40px;
     margin-top:25px;
 }
-*{
 
-}
-.container{
-    width:500px;
-    height:500px;
+
+
+.container {
+    width: 500px;
+    height: 500px;
     display: grid;
+    margin: 0 auto;
     margin-bottom: 20px;
-    
 }
 
+
+.colorB{
+    text-align: center;
+}
+.options{
+    text-align: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+}
