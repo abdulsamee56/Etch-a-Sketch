@@ -32,11 +32,17 @@ function changeSize(input){
     }
 }
 
+function changeColor(clr){
+    color = clr;
+}
+
 function colorBoard(){
         this.style.backgroundColor=color;
 }
 
 function resetBoard(){
-    PopulateBoard(16);
+    let input = document.querySelector('input[type="Size"]')
+    let size = input.value;
+    PopulateBoard(size);
 
 }
