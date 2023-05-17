@@ -5,13 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Etch-a-Sketch</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
     <link  rel="stylesheet" href="style.css">
 </head>
 <body>
+   
+    <div class="header">  
+    <h1>Etch-a-Sketch</h1>
+    <h4>Tap to stop coloring, tap again to start</h4>
+    </div>
     
-    <div class="header">Etch-a-Sketch</div>
 
+    
+    
     <div class="container"></div>
+    
 
     <div class="options">
         <input type="Size" placeholder="Size of board" value = "16" onchange="changeSize(this.value)">
@@ -21,9 +31,9 @@
     
 
     <div class="colorB">
-        <button onclick="changeColor('black')">Black</button>
-        <button onclick="changeColor('white')">white</button>
-        <button onclick="changeColor('Red')">Red</button>
+        <button onclick="changeColor('black')" >Black</button>
+        <button onclick="changeColor('white')">Eraser</button>
+        <button onclick="getRandomColor()">Random</button>
     </div>
     <script src="index.js"></script>
 </body>
